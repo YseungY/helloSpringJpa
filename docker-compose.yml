@@ -57,7 +57,7 @@ services:
       interval: 10s    # 10초마다 체크
       timeout: 5s      # 5초 내 응답 없으면 실패
       retries: 5       # 5회 실패 시 unhealthy
-      start_period: 30s # 컨테이너 시작 후 30초간은 헬스체크 결과 무시
+      start_period: 90s # 컨테이너 시작 후 90초간은 헬스체크 결과 무시
 
     command: >
       --character-set-server=utf8mb4
